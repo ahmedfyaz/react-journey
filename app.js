@@ -1,3 +1,4 @@
-var h1 = document.createElement('h1')
-h1.innerHTML = "Hello from React"
-document.body.appendChild(h1)
+export const arr  = [10,20,30,40,50]
+const user = 'Sarthak'
+
+export default user
