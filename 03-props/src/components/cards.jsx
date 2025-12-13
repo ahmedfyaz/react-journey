@@ -1,16 +1,19 @@
 import React from 'react'
 
-const Cards = (props) => {
+function H1(props) {
+    return null;
+}
+
+const Cards = (prop) => {
     return (
-        <div className={'card'}>
-            <img src={props.image} alt={'no'}/>
-            <h1>
-                {props.user}
-            </h1>
-            <p>
-                {props.age}
-            </p>
-            <button>View Profile</button>
+        <div>
+            <div className={'card'}>
+                <img src={prop.image} alt={""}/>
+                <H1>
+                    {prop.user}
+                </H1>
+                <button >{prop.age}</button>
+            </div>
         </div>
     )
 }
