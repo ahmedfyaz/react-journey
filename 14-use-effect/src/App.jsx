@@ -2,24 +2,35 @@ import React, {useEffect, useState} from 'react'
 
 const App = () => {
 
-    const [num, setNum] = useState(0)
-    const [num2, setNum2] = useState(100)
+    const [a, setA] = useState(0)
+    const [b, setB2] = useState(100)
+
+    function aVal()
+    {
+        console.log('value of a is changed')
+    }
+    function bVal()
+    {
+        console.log('value of b is changed')
+    }
     useEffect(() => {
         console.log('render');
-    },[num]);
+    },[a]);
 
     return (
         <div>
-            <h1>{num}</h1>
-            <h1>{num2}</h1>
+            <h1>{a}</h1>
+            <h1>{b}</h1>
             <button onClick={()=>
             {
-                setNum(num+1)
-            }}
-            onMouseEnter={()=>
+                aVal()
+                setA(a+1)
+            }}>Change a</button>
+            <button onClick={()=>
             {
-                setNum2(num2+10)
-            }}>Click me</button>
+                bVal()
+                setB2(b+10)
+            }}>Change b</button>
         </div>
     )
 }
