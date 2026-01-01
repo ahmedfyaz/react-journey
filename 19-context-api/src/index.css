@@ -1,8 +1,23 @@
 *{
   margin: 0;
   padding: 0;
+  color: white;
   font-family: "Poppins", serif;
 }
 html,body{
-
+  height: 100%;
+  width: 100%;
+  background: #1a1a1a;
+}
+.nav
+{
+  display: flex;
+  background: lightseagreen;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+.nav2
+{
+  display: flex;
+  gap: 30px;
 }
