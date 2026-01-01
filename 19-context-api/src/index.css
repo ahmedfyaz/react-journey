@@ -9,15 +9,23 @@ html,body{
   width: 100%;
   background: #1a1a1a;
 }
-.nav
+
+.nav2
+{
+  display: flex;
+  gap: 30px;
+}
+.dark
+{
+  display: flex;
+  background: darkseagreen;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+.light
 {
   display: flex;
   background: lightseagreen;
   justify-content: space-between;
   padding: 20px 40px;
-}
-.nav2
-{
-  display: flex;
-  gap: 30px;
 }
